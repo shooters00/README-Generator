@@ -1,9 +1,9 @@
 
-<a href="http://badge.fury.io/js/inquirer" rel="nofollow"><img src="https://camo.githubusercontent.com/0824e8e9fe75f212d6d6ccb4338ca8d8dad30fdcce477ba3fb03f5a7656fe306/68747470733a2f2f62616467652e667572792e696f2f6a732f696e7175697265722e737667" alt="npm" data-canonical-src="https://badge.fury.io/js/inquirer.svg" style="max-width:100%;"></a>
-# BUBBLES
+<a href="http://www.wtfpl.net/about/" rel="nofollow"><img src="https://img.shields.io/badge/License-WTFPL-brightgreen.svg" alt="WTFPL" title="WTFPL" style="max-width:100%;"></a>
+# PIZZA
 
 ## Description
-
+asdfsdfs
 
 #### Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -13,13 +13,22 @@ If your README is long, add a table of contents to make it easy for users to fin
 4. [Contributing](#contributing)
 
 ## Installation
+asdfsd
 
 ## Usage
+asdfsd
 
 ## License
-Apache 2.0
+This project is covered under the WTFPL license. 
+
 ## Contributing
-undefined
+asdfs
+
 ## Tests
-undefined
+asdfsd
+
+## Questions
+My GitHub: https://github.com/shooters00
+
+For additional questions, contact me at: shooters0000@gmail.com
 

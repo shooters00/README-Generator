@@ -21,6 +21,16 @@ inquirer
     },
     {
       type: 'input',
+      name: 'userID',
+      message: 'What is your GitHub User ID?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email?',
+    },
+    {
+      type: 'input',
       name: 'description',
       message: 'What is the description?',
     },
@@ -35,10 +45,21 @@ inquirer
       message: 'What are the steps to use your application?',
     },
     {
+    type: 'input',
+    name: 'contributing',
+    message: 'What are the contribution guidelines?',
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'What are the test instructions?',
+      },
+    {
       type: 'list',
       name: 'license',
       message: 'Choose a license from the list',
-      choices: ["Apache 2.0", "Boost 1.0"]
+      choices: ["WTFPL", "GPL", "Apache", "Boost", "Open Data Commons Attribution", "ODbL"],
+      default: "WTFPL"
     },
   ])
   .then((data) => {
@@ -53,7 +74,7 @@ inquirer
     getBadges(data.license);
 
     const index =`
-<a href="${data.link}" rel="nofollow"><img src="${data.src}" alt="${data.alt}" title="${data.badgeTitle}" style="max-width:100%;"></a>
+<a href="${link}" rel="nofollow"><img src="${src}" alt="${alt}" title="${title}" style="max-width:100%;"></a>
 # ${titleUpper}
 
 ## Description
@@ -68,14 +89,23 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 ${data.installation}
+
 ## Usage
 ${data.usage}
+
 ## License
-${data.license}
+This project is covered under the ${data.license} license. 
+
 ## Contributing
 ${data.contributing}
+
 ## Tests
 ${data.tests}
+
+## Questions
+My GitHub: https://github.com/${data.userID}
+
+For additional questions, contact me at: ${data.email}
 
 `;
 
@@ -89,29 +119,52 @@ ${data.tests}
 
 const getBadges = (info) => {
   switch (info) {
-    case "Apache 2.0":
-      badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    case "WTFPL":
+      link = "http://www.wtfpl.net/about/";
+      src = "https://img.shields.io/badge/License-WTFPL-brightgreen.svg";
+      alt = "WTFPL";
+      title = "WTFPL";
+      //badge = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
       break;
-    case "Boost 1.0":
-      badge = "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+    case "GPL":
+      link = "https://www.gnu.org/licenses/gpl-3.0";
+      src = "https://img.shields.io/badge/License-GPLv3-blue.svg";
+      alt = "GPL";
+      title = "GPL";
+      //badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+    case "Apache":
+      link = "https://opensource.org/licenses/Apache-2.0";
+      src = "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
+      alt = "Apache";
+      title = "Apache";
+      //badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case "Boost":
+      //badge = "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+      link = "https://www.boost.org/LICENSE_1_0.txt";
+      src = "https://img.shields.io/badge/License-Boost%201.0-lightblue.svg";
+      alt = "Boost";
+      title = "Boost";
+      break;
+    case "Open Data Commons Attribution":
+      //badge = "[![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/)";
+      link = "https://opendatacommons.org/licenses/by/";
+      src = "https://img.shields.io/badge/License-ODC_BY-brightgreen.svg";
+      alt = "Open Data Commons Attribution";
+      title = "Open Data Commons Attribution";
+      break;
+    case "ODbL":
+      //badge = "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)";
+      link = "https://opendatacommons.org/licenses/pddl/";
+      src = "https://img.shields.io/badge/License-PDDL-brightgreen.svg";
+      alt = "ODbL";
+      title = "ODbL";
       break;
     default:
+      link = "http://www.wtfpl.net/about/";
+      src = "https://img.shields.io/badge/License-WTFPL-brightgreen.svg";
+      alt = "WTFPL";
+      title = "WTFPL";
   }
-
 };
-
-
-/*
-
-
-License choices:
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
-[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-
-<a href="http://badge.fury.io/js/inquirer" rel="nofollow"><img src="https://camo.githubusercontent.com/0824e8e9fe75f212d6d6ccb4338ca8d8dad30fdcce477ba3fb03f5a7656fe306/68747470733a2f2f62616467652e667572792e696f2f6a732f696e7175697265722e737667" alt="npm" data-canonical-src="https://badge.fury.io/js/inquirer.svg" style="max-width:100%;"></a>
-<img src="https://camo.githubusercontent.com/0824e8e9fe75f212d6d6ccb4338ca8d8dad30fdcce477ba3fb03f5a7656fe306/68747470733a2f2f62616467652e667572792e696f2f6a732f696e7175697265722e737667" alt="npm" data-canonical-src="https://badge.fury.io/js/inquirer.svg" style="max-width:100%;">
-</a>
-  */
