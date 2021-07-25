@@ -1,7 +1,7 @@
 {
   "name": "readgen",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a href=\"http://www.wtfpl.net/about/\" rel=\"nofollow\"><img src=\"https://img.shields.io/badge/License-WTFPL-brightgreen.svg\" alt=\"WTFPL\" title=\"WTFPL\" style=\"max-width:100%;\"></a> # PIZZA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
