@@ -5,6 +5,9 @@
 ## Description
 This is a JHU Bootcamp assignment to create a professional README file using node.js, inquirer, and JavaScript.  It also uses "Open" to launch the README after creation into Typora.  The project allows the user to provide answers to typical README questions and produce a professional README.md file.
 
+## Video
+https://user-images.githubusercontent.com/80861572/126916974-34b1dcd2-9281-4667-8ac7-775c8bfb2451.mp4
+
 #### Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
 1. [Installation](#installation)
