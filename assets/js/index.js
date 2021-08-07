@@ -58,8 +58,8 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'Choose a license from the list',
-      choices: ["WTFPL", "GPL", "Apache", "Boost", "Open Data Commons Attribution", "ODbL"],
-      default: "WTFPL"
+      choices: ["None", "GPL", "Apache", "Boost", "Open Data Commons Attribution", "ODbL"],
+      default: "None"
     },
   ])
   .then((data) => {
@@ -81,11 +81,12 @@ inquirer
 ${data.description}
 
 #### Table of Contents
-If your README is long, add a table of contents to make it easy for users to find what they need.
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
 4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -162,9 +163,9 @@ const getBadges = (info) => {
       title = "ODbL";
       break;
     default:
-      link = "http://www.wtfpl.net/about/";
-      src = "https://img.shields.io/badge/License-WTFPL-brightgreen.svg";
-      alt = "WTFPL";
-      title = "WTFPL";
+      link = "";
+      src = "https://img.shields.io/badge/license-none-blue.svg";
+      alt = "None";
+      title = "None";
   }
 };

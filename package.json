@@ -1,0 +1,20 @@
+{
+  "name": "README-Generator",
+  "version": "1.0.0",
+  "description": "<a href=\"http://www.wtfpl.net/about/\" rel=\"nofollow\"><img src=\"https://img.shields.io/badge/License-WTFPL-brightgreen.svg\" alt=\"WTFPL\" title=\"WTFPL\" style=\"max-width:100%;\"></a> # PROFESSIONAL README GENERATOR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shooters00/README-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shooters00/README-Generator/issues"
+  },
+  "homepage": "https://github.com/shooters00/README-Generator#readme"
+}

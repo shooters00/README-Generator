@@ -1,9 +1,9 @@
 
-<a href="http://www.wtfpl.net/about/" rel="nofollow"><img src="https://img.shields.io/badge/License-WTFPL-brightgreen.svg" alt="WTFPL" title="WTFPL" style="max-width:100%;"></a>
-# PROFESSIONAL README GENERATOR
+<a href="" rel="nofollow"><img src="https://img.shields.io/badge/license-none-blue.svg" alt="None" title="None" style="max-width:100%;"></a>
+# NOTE TAKER
 
 ## Description
-This is a JHU Bootcamp assignment to create a professional README file using node.js, inquirer, and JavaScript.  It also uses "Open" to launch the README after creation into Typora.  The project allows the user to provide answers to typical README questions and produce a professional README.md file.
+This is a JHU Bootcamp assignment.  This application can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
 #### Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -11,21 +11,23 @@ If your README is long, add a table of contents to make it easy for users to fin
 2. [Usage](#usage)
 3. [License](#license)
 4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [Questions](#questions)
 
 ## Installation
-To install, clone the github repository https://github.com/shooters00/README-Generator .
+To install, clone the github repository https://github.com/shooters00/Note-Taker .
 
 ## Usage
-To use, navigate to the 'assets/js' folder and type "node index.js".  Provide answers to the questions about your project and a README.md will be created in the same directory as the index.js file.
+Launch the app: https://afternoon-wildwood-16143.herokuapp.com/ . Go to 'Get Started'. Add notes using the '+' sign.
 
 ## License
-This project is covered under the WTFPL license. 
+This project is covered under the None license. 
 
 ## Contributing
 This is a JHU Bootcamp assignment and no contributions are expected.
 
 ## Tests
-There are no testing instructions for this assignment.
+N/A
 
 ## Questions
 My GitHub: https://github.com/shooters00
